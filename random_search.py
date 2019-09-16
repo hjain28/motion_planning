@@ -44,8 +44,9 @@ def Search(world,start,goal):
         print "NO path found in random search within the maximum limit"
     return path    
         
-Maximum_steps            = 50
-world_state              = [[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,0,0,1,0],[0,0,0,0,1,0],[0,0,1,1,1,0],[0,0,1,0,1,0]]
-robot_pose,goal_pose     = [(2,0),(5,5)]
-path                     = Search(world_state,robot_pose,goal_pose)
-print path
+if __name__ == '__main__' :	
+	Maximum_steps            = 50
+	world_state              = [[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,0,0,1,0],[0,0,0,0,1,0],[0,0,1,1,1,0],[0,0,1,0,1,0]]
+	robot_pose,goal_pose     = [(2,0),(5,5)]
+	path                     = Search(world_state,robot_pose,goal_pose)
+	print path
