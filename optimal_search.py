@@ -1,4 +1,5 @@
 import numpy as np
+import queue
 from suppClass import *
 
 def heuristic(a, b):
