@@ -45,7 +45,9 @@ def Search(world,start,goal):
     path.reverse()
     return path
 
-world_state                   = [[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,0,0,1,0],[0,0,0,0,1,0],[0,0,1,1,1,0],[0,0,1,0,1,0]]
-robot_pose, goal_pose         = [(2,0),(5,5)]
-optimal_path                  = Search(world_state,robot_pose,goal_pose)
-print optimal_path
+
+if __name__ == '__main__' :
+    world_state                   = [[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,0,0,1,0],[0,0,0,0,1,0],[0,0,1,1,1,0],[0,0,1,0,1,0]]
+    robot_pose, goal_pose         = [(2,0),(5,5)]
+    optimal_path                  = Search(world_state,robot_pose,goal_pose)
+    print optimal_path
